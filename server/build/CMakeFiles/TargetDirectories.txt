@@ -1,0 +1,9 @@
+C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server/build/CMakeFiles/Experimental.dir
+C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server/build/CMakeFiles/Nightly.dir
+C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server/build/CMakeFiles/Continuous.dir
+C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server/build/CMakeFiles/ipc_server.dir
+C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server/build/CMakeFiles/PACKAGE.dir
+C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server/build/CMakeFiles/RUN_TESTS.dir
+C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server/build/CMakeFiles/ALL_BUILD.dir
+C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server/build/CMakeFiles/ZERO_CHECK.dir
