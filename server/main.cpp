@@ -1,12 +1,69 @@
+#define UNICODE
+#define _UNICODE
 #include <iostream>
 #include <windows.h>
 #include <tchar.h>
 #include <strsafe.h>
 #include <string>
 #include <thread>
+#include <memory>
+#include <exception>
 
-const std::string PIPE_NAME = "MyPipe";
+const std::basic_string<TCHAR> PIPE_NAME = TEXT("MyPipe");
 const uint16_t BUFSIZE = 512;
+
+//Note: unique
+class SmartHandle
+{
+private:
+    HANDLE m_handle{nullptr};
+public:
+    explicit SmartHandle(HANDLE handle) : m_handle(handle) {}
+    ~SmartHandle() { close(); }
+
+    //move constructor
+    SmartHandle(SmartHandle &&other) noexcept {
+        m_handle = other.m_handle;
+        other.m_handle = nullptr;
+    }
+
+    //move operator (transfer ownership of HANDLE)
+    SmartHandle& operator=(SmartHandle &&other) noexcept {
+        if (this != &other) {
+            reset(other.m_handle);
+            other.m_handle = nullptr;
+        }
+
+        return *this;
+    }
+
+    //conversion operator
+    //used to transfer ownership even if a function expects a raw HANDLE instead of a SmartHandle
+    // operator HANDLE() && {
+    //     return std::exchange(m_handle, nullptr);    //return the handle and set it to null afterwards. Avoids creating a temporary var
+    // }
+
+    //Disable copying
+    SmartHandle(const SmartHandle& other) = delete;
+    SmartHandle& operator=(const SmartHandle &other) = delete;
+
+    void reset(HANDLE handle) {
+        close();
+        m_handle = handle;
+    }
+
+    HANDLE get() const {
+        return m_handle;
+    }
+
+    void close() {
+        if (m_handle != nullptr && m_handle != INVALID_HANDLE_VALUE) {
+            CloseHandle(m_handle);
+            m_handle = nullptr;
+        }
+    }
+
+};
 
 struct Data {
     int id{0};
@@ -15,14 +72,116 @@ struct Data {
 
 DWORD WINAPI old_HandleClientThread(LPVOID paramPtr) {
     //old
+    return 0;
+}
+
+//Note: make it so it returns a success flag instead?
+
+/// @brief Generates a response to the provided client request.
+/// @param requestBuffer The client's request
+/// @param responseBuffer A (preallocated) buffer to the server's response
+/// @return The amount of bytes written in responseBuffer
+DWORD GetResponseToClientRequest(const std::unique_ptr<TCHAR[]> &requestBuffer, 
+                          std::unique_ptr<TCHAR[]> &responseBuffer) {
+    std::basic_string<TCHAR> request(requestBuffer.get());
+
+    //Note: handle reply based on request
+    _tprintf(TEXT("Client request: %s\n"), request.c_str());
+
+    std::basic_string<TCHAR> genericResponse = TEXT("OK");
+
+    DWORD responseBytes = 0;
+    HRESULT copyResult = StringCchCopy(responseBuffer.get(), BUFSIZE, genericResponse.c_str());
+    
+    if (SUCCEEDED(copyResult)) {
+        responseBytes = (lstrlen(responseBuffer.get()) + 1) * sizeof(TCHAR);
+    }
+    else {
+        std::cerr << "GetResponseToClientRequest failed to copy server's response into the provided buffer 'response'" << std::endl;
+        
+        responseBytes = 0;
+        responseBuffer[0] = 0;
+    }
+
+    return responseBytes;
 }
 
 void ProcessClientThread(HANDLE pipeHandle) {
+    if (pipeHandle == nullptr) {
+        std::cerr << "pipeHandle got unexepcted nullptr value" << std::endl;
 
+        return;
+    }
+
+    //Memory allocation
+    std::unique_ptr<TCHAR[]> clientRequest;
+    std::unique_ptr<TCHAR[]> serverResponse;
+
+    try
+    {
+        clientRequest.reset(new TCHAR[BUFSIZE]);
+        serverResponse.reset(new TCHAR[BUFSIZE]);
+    }
+    catch(const std::bad_alloc& e)
+    {
+        std::cerr << "Memory allocation to process a client failed: " << 
+            e.what() << std::endl;
+        return;
+    }
+    
+
+    // Loop until done reading
+    while (true)
+    {
+        DWORD bytesRead = 0;
+        bool successfulRead = ReadFile(
+            pipeHandle,
+            clientRequest.get(),    //receive data buffer (raw)
+            BUFSIZE,    
+            &bytesRead,
+            nullptr //not overlapped I/O
+        );
+
+        //!!! BREAK !!!
+        if (!successfulRead || bytesRead == 0) {
+            if (GetLastError() == ERROR_BROKEN_PIPE) {
+                std::cout << "ProcessClientThread: Client disconnected." << std::endl;
+            }
+            else {
+                std::cout << "ProcessClientThread: ReadFile failed, last error: " << GetLastError() << std::endl;
+            }
+
+            break;
+        }
+
+        DWORD responseBytes = GetResponseToClientRequest(clientRequest, serverResponse);
+        DWORD writtenBytes = 0;
+        bool successfulWrite = WriteFile(
+            pipeHandle,
+            serverResponse.get(),
+            responseBytes,
+            &writtenBytes,
+            nullptr // not overlapped I/O
+        );
+
+        //!!! BREAK !!!
+        if (!successfulWrite || (responseBytes != writtenBytes)) {
+            std::cerr << "ProcessClientThread failed to write response, last error: " << GetLastError() << std::endl;
+
+            break;
+        }
+    }
+
+    //Flush and disconnect
+    FlushFileBuffers(pipeHandle);
+    DisconnectNamedPipe(pipeHandle);
+    CloseHandle(pipeHandle);    //Note: implement SmartHandle
+
+    std::cout << "ProcessClientThread exiting." << std::endl;
 }
 
 int _tmain(VOID) {
-    LPCTSTR fullPipeName = TEXT(("\\\\.\\pipe\\" + PIPE_NAME).c_str());
+    LPCTSTR fullPipeName = (TEXT("\\\\.\\pipe\\") + PIPE_NAME).c_str();
 
     //TODO: Add a way to (properly) stop the program via ctrl-c or the like
     while (true)
