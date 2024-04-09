@@ -9,71 +9,11 @@
 #include <memory>
 #include <exception>
 
+#include "SmartHandle.h"
+#include "DataObject.h"
+
 const std::basic_string<TCHAR> PIPE_NAME = TEXT("MyPipe");
 const uint16_t BUFSIZE = 512;
-
-//Note: unique
-class SmartHandle
-{
-private:
-    HANDLE m_handle{nullptr};
-public:
-    explicit SmartHandle(HANDLE handle) : m_handle(handle) {}
-    ~SmartHandle() { close(); }
-
-    //move constructor
-    SmartHandle(SmartHandle &&other) noexcept {
-        m_handle = other.m_handle;
-        other.m_handle = nullptr;
-    }
-
-    //move operator (transfer ownership of HANDLE)
-    SmartHandle& operator=(SmartHandle &&other) noexcept {
-        if (this != &other) {
-            reset(other.m_handle);
-            other.m_handle = nullptr;
-        }
-
-        return *this;
-    }
-
-    //conversion operator
-    //used to transfer ownership even if a function expects a raw HANDLE instead of a SmartHandle
-    // operator HANDLE() && {
-    //     return std::exchange(m_handle, nullptr);    //return the handle and set it to null afterwards. Avoids creating a temporary var
-    // }
-
-    //Disable copying
-    SmartHandle(const SmartHandle& other) = delete;
-    SmartHandle& operator=(const SmartHandle &other) = delete;
-
-    void reset(HANDLE handle) {
-        close();
-        m_handle = handle;
-    }
-
-    HANDLE get() const {
-        return m_handle;
-    }
-
-    void close() {
-        if (m_handle != nullptr && m_handle != INVALID_HANDLE_VALUE) {
-            CloseHandle(m_handle);
-            m_handle = nullptr;
-        }
-    }
-
-};
-
-struct Data {
-    int id{0};
-    double value{0};
-};
-
-DWORD WINAPI old_HandleClientThread(LPVOID paramPtr) {
-    //old
-    return 0;
-}
 
 //Note: make it so it returns a success flag instead?
 

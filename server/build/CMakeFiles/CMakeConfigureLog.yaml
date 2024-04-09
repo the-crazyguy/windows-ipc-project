@@ -225,3 +225,196 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.29.30146.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: D:\\Programming\\si7-personal-project\\windows-ipc-project\\server\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.29.30146.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: D:\\Programming\\si7-personal-project\\windows-ipc-project\\server\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/CMakeScratch/TryCompile-6e0lyr"
+      binary: "D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/CMakeScratch/TryCompile-6e0lyr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/CMakeScratch/TryCompile-6e0lyr
+        
+        Run Build Command(s):D:/Apps/CMake/bin/cmake.exe -E env VERBOSE=1 D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe -f Makefile cmTC_36da9/fast && D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_36da9.dir\\build.make CMakeFiles/cmTC_36da9.dir/build
+        mingw32-make[1]: Entering directory 'D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/CMakeScratch/TryCompile-6e0lyr'
+        Building C object CMakeFiles/cmTC_36da9.dir/CMakeCCompilerABI.c.obj
+        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_36da9.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\Programming\\si7-personal-project\\windows-ipc-project\\server\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6e0lyr --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_36da9.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_36da9.dir/ /FS -c D:\\Apps\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_36da9.exe
+        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_36da9.dir\\link.txt --verbose=1
+        D:\\Apps\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_36da9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_36da9.dir\\objects1.rsp  /out:cmTC_36da9.exe /implib:cmTC_36da9.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\server\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6e0lyr\\cmTC_36da9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_36da9.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_36da9.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_36da9.dir/manifest.res CMakeFiles\\cmTC_36da9.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_36da9.dir\\objects1.rsp /out:cmTC_36da9.exe /implib:cmTC_36da9.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\server\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6e0lyr\\cmTC_36da9.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_36da9.dir/intermediate.manifest CMakeFiles\\cmTC_36da9.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_36da9.dir/intermediate.manifest /out:CMakeFiles\\cmTC_36da9.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_36da9.dir/manifest.res CMakeFiles\\cmTC_36da9.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_36da9.dir\\objects1.rsp /out:cmTC_36da9.exe /implib:cmTC_36da9.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\server\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6e0lyr\\cmTC_36da9.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_36da9.dir/intermediate.manifest CMakeFiles\\cmTC_36da9.dir/manifest.res
+        mingw32-make[1]: Leaving directory 'D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/CMakeScratch/TryCompile-6e0lyr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "D:/Apps/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/CMakeScratch/TryCompile-mspn5e"
+      binary: "D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/CMakeScratch/TryCompile-mspn5e"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/CMakeScratch/TryCompile-mspn5e
+        
+        Run Build Command(s):D:/Apps/CMake/bin/cmake.exe -E env VERBOSE=1 D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe -f Makefile cmTC_b8af6/fast && D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b8af6.dir\\build.make CMakeFiles/cmTC_b8af6.dir/build
+        mingw32-make[1]: Entering directory 'D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/CMakeScratch/TryCompile-mspn5e'
+        Building CXX object CMakeFiles/cmTC_b8af6.dir/CMakeCXXCompilerABI.cpp.obj
+        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_b8af6.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\Programming\\si7-personal-project\\windows-ipc-project\\server\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mspn5e --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_b8af6.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_b8af6.dir/ /FS -c D:\\Apps\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp
+        CMakeCXXCompilerABI.cpp
+        Linking CXX executable cmTC_b8af6.exe
+        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_b8af6.dir\\link.txt --verbose=1
+        D:\\Apps\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b8af6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_b8af6.dir\\objects1.rsp  /out:cmTC_b8af6.exe /implib:cmTC_b8af6.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\server\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mspn5e\\cmTC_b8af6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_b8af6.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_b8af6.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_b8af6.dir/manifest.res CMakeFiles\\cmTC_b8af6.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_b8af6.dir\\objects1.rsp /out:cmTC_b8af6.exe /implib:cmTC_b8af6.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\server\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mspn5e\\cmTC_b8af6.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b8af6.dir/intermediate.manifest CMakeFiles\\cmTC_b8af6.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_b8af6.dir/intermediate.manifest /out:CMakeFiles\\cmTC_b8af6.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_b8af6.dir/manifest.res CMakeFiles\\cmTC_b8af6.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_b8af6.dir\\objects1.rsp /out:cmTC_b8af6.exe /implib:cmTC_b8af6.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\server\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mspn5e\\cmTC_b8af6.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b8af6.dir/intermediate.manifest CMakeFiles\\cmTC_b8af6.dir/manifest.res
+        mingw32-make[1]: Leaving directory 'D:/Programming/si7-personal-project/windows-ipc-project/server/build/CMakeFiles/CMakeScratch/TryCompile-mspn5e'
+        
+      exitCode: 0
+...
