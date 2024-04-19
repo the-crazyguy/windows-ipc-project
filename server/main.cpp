@@ -149,30 +149,7 @@ int _tmain(VOID) {
 
         if (connected) {
             std::cout << "Client connected!" << std::endl;
-            // Create a thread to handle the client
-            //eww, windows api
-            /*
-            DWORD threadId = 0;
-            HANDLE threadHandle = CreateThread(
-                nullptr, //no security attribute
-                0,  //default stack size
-                HandleClientThread, //thread procedure
-                static_cast<LPVOID>(pipeHandle),    //thread parameter
-                0,  //not suspended
-                &threadId   //returns thread id
-            );
 
-            if (threadHandle == nullptr) {
-                std::cerr << "CreateThread failed: " << GetLastError() << std::endl;
-
-                return -1; 
-            }
-            else {
-                //Thread created, close the handle
-                CloseHandle(threadHandle);
-            }
-            */
-           
             std::thread processingThread(ProcessClientThread, pipeHandle);
             processingThread.detach();  //run independently
         }

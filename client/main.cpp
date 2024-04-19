@@ -61,5 +61,17 @@ int _tmain( VOID ) {
         return -1;
     }
 
+    //Send simple message
+    std::basic_string<TCHAR> messageToSend = TEXT("Hello world!");
+    DWORD bytesWritten = 0;
+
+    bool isSendSuccessful = WriteFile(
+        pipeHandle,
+        messageToSend.c_str(),
+        static_cast<DWORD>(messageToSend.size()),
+        &bytesWritten,
+        nullptr //not overlapped 
+    );
+
     return 0;
 }
