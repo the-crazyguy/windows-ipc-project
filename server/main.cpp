@@ -121,13 +121,15 @@ void ProcessClientThread(HANDLE pipeHandle) {
 }
 
 int _tmain(VOID) {
-    LPCTSTR fullPipeName = (TEXT("\\\\.\\pipe\\") + PIPE_NAME).c_str();
+    //LPCTSTR fullPipeName = (TEXT("\\\\.\\pipe\\") + PIPE_NAME).c_str();
+    std::basic_string<TCHAR> fullPipeName = TEXT("\\\\.\\pipe\\") + PIPE_NAME;
+
 
     //TODO: Add a way to (properly) stop the program via ctrl-c or the like
     while (true)
     {
         HANDLE pipeHandle = CreateNamedPipe(
-        fullPipeName, //name
+        fullPipeName.c_str(), //name
         PIPE_ACCESS_DUPLEX, // read/write
         PIPE_TYPE_MESSAGE | PIPE_READMODE_MESSAGE | PIPE_WAIT,
         PIPE_UNLIMITED_INSTANCES,   //Max instances

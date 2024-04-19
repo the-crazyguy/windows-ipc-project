@@ -1,7 +1,19 @@
 [
 {
   "directory": "D:/Programming/si7-personal-project/windows-ipc-project/client/build",
-  "command": "C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\ipc_client.dir\\main.cpp.obj /FdCMakeFiles\\ipc_client.dir/ /FS -c D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\main.cpp",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo /TP  -ID:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\SmartHandle.dir\\source\\SmartHandle.cpp.obj /FdCMakeFiles\\SmartHandle.dir\\SmartHandle.pdb /FS -c D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\source\\SmartHandle.cpp",
+  "file": "D:/Programming/si7-personal-project/windows-ipc-project/client/source/SmartHandle.cpp",
+  "output": "CMakeFiles/SmartHandle.dir/source/SmartHandle.cpp.obj"
+},
+{
+  "directory": "D:/Programming/si7-personal-project/windows-ipc-project/client/build",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo /TP  -ID:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\DebugModule.dir\\source\\debug_module.cpp.obj /FdCMakeFiles\\DebugModule.dir\\DebugModule.pdb /FS -c D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\source\\debug_module.cpp",
+  "file": "D:/Programming/si7-personal-project/windows-ipc-project/client/source/debug_module.cpp",
+  "output": "CMakeFiles/DebugModule.dir/source/debug_module.cpp.obj"
+},
+{
+  "directory": "D:/Programming/si7-personal-project/windows-ipc-project/client/build",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo /TP  -ID:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\ipc_client.dir\\main.cpp.obj /FdCMakeFiles\\ipc_client.dir/ /FS -c D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\main.cpp",
   "file": "D:/Programming/si7-personal-project/windows-ipc-project/client/main.cpp",
   "output": "CMakeFiles/ipc_client.dir/main.cpp.obj"
 }

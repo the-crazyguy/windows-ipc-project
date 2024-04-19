@@ -522,6 +522,32 @@ ipc_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ipc_client.dir\build.make CMakeFiles/ipc_client.dir/build
 .PHONY : ipc_client/fast
 
+#=============================================================================
+# Target rules for targets named DebugModule
+
+# Build rule for target.
+DebugModule: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DebugModule
+.PHONY : DebugModule
+
+# fast build rule for target.
+DebugModule/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DebugModule.dir\build.make CMakeFiles/DebugModule.dir/build
+.PHONY : DebugModule/fast
+
+#=============================================================================
+# Target rules for targets named SmartHandle
+
+# Build rule for target.
+SmartHandle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SmartHandle
+.PHONY : SmartHandle
+
+# fast build rule for target.
+SmartHandle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartHandle.dir\build.make CMakeFiles/SmartHandle.dir/build
+.PHONY : SmartHandle/fast
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -545,6 +571,54 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ipc_client.dir\build.make CMakeFiles/ipc_client.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+source/SmartHandle.obj: source/SmartHandle.cpp.obj
+.PHONY : source/SmartHandle.obj
+
+# target to build an object file
+source/SmartHandle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartHandle.dir\build.make CMakeFiles/SmartHandle.dir/source/SmartHandle.cpp.obj
+.PHONY : source/SmartHandle.cpp.obj
+
+source/SmartHandle.i: source/SmartHandle.cpp.i
+.PHONY : source/SmartHandle.i
+
+# target to preprocess a source file
+source/SmartHandle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartHandle.dir\build.make CMakeFiles/SmartHandle.dir/source/SmartHandle.cpp.i
+.PHONY : source/SmartHandle.cpp.i
+
+source/SmartHandle.s: source/SmartHandle.cpp.s
+.PHONY : source/SmartHandle.s
+
+# target to generate assembly for a file
+source/SmartHandle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartHandle.dir\build.make CMakeFiles/SmartHandle.dir/source/SmartHandle.cpp.s
+.PHONY : source/SmartHandle.cpp.s
+
+source/debug_module.obj: source/debug_module.cpp.obj
+.PHONY : source/debug_module.obj
+
+# target to build an object file
+source/debug_module.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DebugModule.dir\build.make CMakeFiles/DebugModule.dir/source/debug_module.cpp.obj
+.PHONY : source/debug_module.cpp.obj
+
+source/debug_module.i: source/debug_module.cpp.i
+.PHONY : source/debug_module.i
+
+# target to preprocess a source file
+source/debug_module.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DebugModule.dir\build.make CMakeFiles/DebugModule.dir/source/debug_module.cpp.i
+.PHONY : source/debug_module.cpp.i
+
+source/debug_module.s: source/debug_module.cpp.s
+.PHONY : source/debug_module.s
+
+# target to generate assembly for a file
+source/debug_module.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DebugModule.dir\build.make CMakeFiles/DebugModule.dir/source/debug_module.cpp.s
+.PHONY : source/debug_module.cpp.s
 
 # Help Target
 help:
@@ -585,10 +659,18 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
+	@echo ... DebugModule
+	@echo ... SmartHandle
 	@echo ... ipc_client
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... source/SmartHandle.obj
+	@echo ... source/SmartHandle.i
+	@echo ... source/SmartHandle.s
+	@echo ... source/debug_module.obj
+	@echo ... source/debug_module.i
+	@echo ... source/debug_module.s
 .PHONY : help
 
 

@@ -27,6 +27,8 @@ D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/
 D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/ContinuousMemCheck.dir
 D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/ContinuousSubmit.dir
 D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/ipc_client.dir
+D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/DebugModule.dir
+D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/SmartHandle.dir
 D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/package.dir
 D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/package_source.dir
 D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/test.dir

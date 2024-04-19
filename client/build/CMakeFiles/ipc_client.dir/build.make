@@ -91,6 +91,8 @@ ipc_client_EXTERNAL_OBJECTS =
 
 ipc_client.exe: CMakeFiles/ipc_client.dir/main.cpp.obj
 ipc_client.exe: CMakeFiles/ipc_client.dir/build.make
+ipc_client.exe: DebugModule.lib
+ipc_client.exe: SmartHandle.lib
 ipc_client.exe: CMakeFiles/ipc_client.dir/objects1.rsp
 ipc_client.exe: CMakeFiles/ipc_client.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ipc_client.exe"

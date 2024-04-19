@@ -63,6 +63,8 @@ CMAKE_BINARY_DIR = D:\Programming\si7-personal-project\windows-ipc-project\clien
 
 # The main recursive "all" target.
 all: CMakeFiles/ipc_client.dir/all
+all: CMakeFiles/DebugModule.dir/all
+all: CMakeFiles/SmartHandle.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -99,6 +101,8 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/ipc_client.dir/clean
+clean: CMakeFiles/DebugModule.dir/clean
+clean: CMakeFiles/SmartHandle.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -833,15 +837,16 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 # Target rules for target CMakeFiles/ipc_client.dir
 
 # All Build rule for target.
-CMakeFiles/ipc_client.dir/all:
+CMakeFiles/ipc_client.dir/all: CMakeFiles/SmartHandle.dir/all
+CMakeFiles/ipc_client.dir/all: CMakeFiles/DebugModule.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ipc_client.dir\build.make CMakeFiles/ipc_client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ipc_client.dir\build.make CMakeFiles/ipc_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles --progress-num=1,2 "Built target ipc_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles --progress-num=5,6 "Built target ipc_client"
 .PHONY : CMakeFiles/ipc_client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ipc_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ipc_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles 0
 .PHONY : CMakeFiles/ipc_client.dir/rule
@@ -854,6 +859,58 @@ ipc_client: CMakeFiles/ipc_client.dir/rule
 CMakeFiles/ipc_client.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ipc_client.dir\build.make CMakeFiles/ipc_client.dir/clean
 .PHONY : CMakeFiles/ipc_client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/DebugModule.dir
+
+# All Build rule for target.
+CMakeFiles/DebugModule.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DebugModule.dir\build.make CMakeFiles/DebugModule.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DebugModule.dir\build.make CMakeFiles/DebugModule.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles --progress-num=1,2 "Built target DebugModule"
+.PHONY : CMakeFiles/DebugModule.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DebugModule.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/DebugModule.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles 0
+.PHONY : CMakeFiles/DebugModule.dir/rule
+
+# Convenience name for target.
+DebugModule: CMakeFiles/DebugModule.dir/rule
+.PHONY : DebugModule
+
+# clean rule for target.
+CMakeFiles/DebugModule.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DebugModule.dir\build.make CMakeFiles/DebugModule.dir/clean
+.PHONY : CMakeFiles/DebugModule.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SmartHandle.dir
+
+# All Build rule for target.
+CMakeFiles/SmartHandle.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartHandle.dir\build.make CMakeFiles/SmartHandle.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartHandle.dir\build.make CMakeFiles/SmartHandle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles --progress-num=3,4 "Built target SmartHandle"
+.PHONY : CMakeFiles/SmartHandle.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SmartHandle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SmartHandle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles 0
+.PHONY : CMakeFiles/SmartHandle.dir/rule
+
+# Convenience name for target.
+SmartHandle: CMakeFiles/SmartHandle.dir/rule
+.PHONY : SmartHandle
+
+# clean rule for target.
+CMakeFiles/SmartHandle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartHandle.dir\build.make CMakeFiles/SmartHandle.dir/clean
+.PHONY : CMakeFiles/SmartHandle.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
