@@ -109,38 +109,38 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-afcdv3"
-      binary: "D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-afcdv3"
+      source: "D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-n96kx5"
+      binary: "D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-n96kx5"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-afcdv3
+        Change Dir: D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-n96kx5
         
-        Run Build Command(s):D:/Apps/CMake/bin/cmake.exe -E env VERBOSE=1 D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe -f Makefile cmTC_ae458/fast && D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ae458.dir\\build.make CMakeFiles/cmTC_ae458.dir/build
-        mingw32-make[1]: Entering directory 'D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-afcdv3'
-        Building C object CMakeFiles/cmTC_ae458.dir/CMakeCCompilerABI.c.obj
-        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_ae458.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-afcdv3 --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_ae458.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_ae458.dir/ /FS -c D:\\Apps\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c
+        Run Build Command(s):D:/Apps/CMake/bin/cmake.exe -E env VERBOSE=1 D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe -f Makefile cmTC_4682e/fast && D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4682e.dir\\build.make CMakeFiles/cmTC_4682e.dir/build
+        mingw32-make[1]: Entering directory 'D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-n96kx5'
+        Building C object CMakeFiles/cmTC_4682e.dir/CMakeCCompilerABI.c.obj
+        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_4682e.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n96kx5 --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_4682e.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_4682e.dir/ /FS -c D:\\Apps\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c
         CMakeCCompilerABI.c
-        Linking C executable cmTC_ae458.exe
-        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_ae458.dir\\link.txt --verbose=1
-        D:\\Apps\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ae458.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ae458.dir\\objects1.rsp  /out:cmTC_ae458.exe /implib:cmTC_ae458.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-afcdv3\\cmTC_ae458.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Linking C executable cmTC_4682e.exe
+        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_4682e.dir\\link.txt --verbose=1
+        D:\\Apps\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_4682e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_4682e.dir\\objects1.rsp  /out:cmTC_4682e.exe /implib:cmTC_4682e.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n96kx5\\cmTC_4682e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_ae458.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_ae458.dir/embed.manifest
+        Create CMakeFiles\\cmTC_4682e.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_4682e.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_ae458.dir/manifest.res CMakeFiles\\cmTC_ae458.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_4682e.dir/manifest.res CMakeFiles\\cmTC_4682e.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ae458.dir\\objects1.rsp /out:cmTC_ae458.exe /implib:cmTC_ae458.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-afcdv3\\cmTC_ae458.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ae458.dir/intermediate.manifest CMakeFiles\\cmTC_ae458.dir/manifest.res
+        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_4682e.dir\\objects1.rsp /out:cmTC_4682e.exe /implib:cmTC_4682e.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n96kx5\\cmTC_4682e.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_4682e.dir/intermediate.manifest CMakeFiles\\cmTC_4682e.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_ae458.dir/intermediate.manifest /out:CMakeFiles\\cmTC_ae458.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_4682e.dir/intermediate.manifest /out:CMakeFiles\\cmTC_4682e.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_ae458.dir/manifest.res CMakeFiles\\cmTC_ae458.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_4682e.dir/manifest.res CMakeFiles\\cmTC_4682e.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ae458.dir\\objects1.rsp /out:cmTC_ae458.exe /implib:cmTC_ae458.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-afcdv3\\cmTC_ae458.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ae458.dir/intermediate.manifest CMakeFiles\\cmTC_ae458.dir/manifest.res
-        mingw32-make[1]: Leaving directory 'D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-afcdv3'
+        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_4682e.dir\\objects1.rsp /out:cmTC_4682e.exe /implib:cmTC_4682e.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n96kx5\\cmTC_4682e.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_4682e.dir/intermediate.manifest CMakeFiles\\cmTC_4682e.dir/manifest.res
+        mingw32-make[1]: Leaving directory 'D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-n96kx5'
         
       exitCode: 0
   -
@@ -152,38 +152,38 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-mpj4qw"
-      binary: "D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-mpj4qw"
+      source: "D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-c0eg7y"
+      binary: "D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-c0eg7y"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-mpj4qw
+        Change Dir: D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-c0eg7y
         
-        Run Build Command(s):D:/Apps/CMake/bin/cmake.exe -E env VERBOSE=1 D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe -f Makefile cmTC_cf46d/fast && D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_cf46d.dir\\build.make CMakeFiles/cmTC_cf46d.dir/build
-        mingw32-make[1]: Entering directory 'D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-mpj4qw'
-        Building CXX object CMakeFiles/cmTC_cf46d.dir/CMakeCXXCompilerABI.cpp.obj
-        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_cf46d.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mpj4qw --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_cf46d.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_cf46d.dir/ /FS -c D:\\Apps\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp
+        Run Build Command(s):D:/Apps/CMake/bin/cmake.exe -E env VERBOSE=1 D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe -f Makefile cmTC_a6ead/fast && D:/Apps/MSYS2/Install/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a6ead.dir\\build.make CMakeFiles/cmTC_a6ead.dir/build
+        mingw32-make[1]: Entering directory 'D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-c0eg7y'
+        Building CXX object CMakeFiles/cmTC_a6ead.dir/CMakeCXXCompilerABI.cpp.obj
+        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_a6ead.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c0eg7y --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_a6ead.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_a6ead.dir/ /FS -c D:\\Apps\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp
         CMakeCXXCompilerABI.cpp
-        Linking CXX executable cmTC_cf46d.exe
-        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_cf46d.dir\\link.txt --verbose=1
-        D:\\Apps\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_cf46d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_cf46d.dir\\objects1.rsp  /out:cmTC_cf46d.exe /implib:cmTC_cf46d.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mpj4qw\\cmTC_cf46d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Linking CXX executable cmTC_a6ead.exe
+        D:\\Apps\\CMake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_a6ead.dir\\link.txt --verbose=1
+        D:\\Apps\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a6ead.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a6ead.dir\\objects1.rsp  /out:cmTC_a6ead.exe /implib:cmTC_a6ead.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c0eg7y\\cmTC_a6ead.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_cf46d.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_cf46d.dir/embed.manifest
+        Create CMakeFiles\\cmTC_a6ead.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_a6ead.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_cf46d.dir/manifest.res CMakeFiles\\cmTC_cf46d.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_a6ead.dir/manifest.res CMakeFiles\\cmTC_a6ead.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_cf46d.dir\\objects1.rsp /out:cmTC_cf46d.exe /implib:cmTC_cf46d.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mpj4qw\\cmTC_cf46d.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_cf46d.dir/intermediate.manifest CMakeFiles\\cmTC_cf46d.dir/manifest.res
+        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a6ead.dir\\objects1.rsp /out:cmTC_a6ead.exe /implib:cmTC_a6ead.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c0eg7y\\cmTC_a6ead.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a6ead.dir/intermediate.manifest CMakeFiles\\cmTC_a6ead.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_cf46d.dir/intermediate.manifest /out:CMakeFiles\\cmTC_cf46d.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_a6ead.dir/intermediate.manifest /out:CMakeFiles\\cmTC_a6ead.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_cf46d.dir/manifest.res CMakeFiles\\cmTC_cf46d.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_a6ead.dir/manifest.res CMakeFiles\\cmTC_a6ead.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_cf46d.dir\\objects1.rsp /out:cmTC_cf46d.exe /implib:cmTC_cf46d.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mpj4qw\\cmTC_cf46d.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_cf46d.dir/intermediate.manifest CMakeFiles\\cmTC_cf46d.dir/manifest.res
-        mingw32-make[1]: Leaving directory 'D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-mpj4qw'
+        C:\\PROGRA~2\\MIB055~1\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a6ead.dir\\objects1.rsp /out:cmTC_a6ead.exe /implib:cmTC_a6ead.lib /pdb:D:\\Programming\\si7-personal-project\\windows-ipc-project\\client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c0eg7y\\cmTC_a6ead.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a6ead.dir/intermediate.manifest CMakeFiles\\cmTC_a6ead.dir/manifest.res
+        mingw32-make[1]: Leaving directory 'D:/Programming/si7-personal-project/windows-ipc-project/client/build/CMakeFiles/CMakeScratch/TryCompile-c0eg7y'
         
       exitCode: 0
 ...

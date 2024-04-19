@@ -22,7 +22,7 @@ const uint16_t BUFSIZE = 512;
 /// @param responseBuffer A (preallocated) buffer to the server's response
 /// @return The amount of bytes written in responseBuffer
 DWORD GetResponseToClientRequest(const std::unique_ptr<TCHAR[]> &requestBuffer, 
-                          std::unique_ptr<TCHAR[]> &responseBuffer) {
+                                 std::unique_ptr<TCHAR[]> &responseBuffer) {
     std::basic_string<TCHAR> request(requestBuffer.get());
 
     //Note: handle reply based on request
@@ -68,7 +68,6 @@ void ProcessClientThread(HANDLE pipeHandle) {
             e.what() << std::endl;
         return;
     }
-    
 
     // Loop until done reading
     while (true)

@@ -1,7 +1,9 @@
 #include <debug_module.h>
-#include <iostream>
+#include <stdio.h>
+#include <windows.h>
+#include <string>
 
-std::string LogLevelToString(Debug::LogLevel level) {
+std::string LogLevelToTString(Debug::LogLevel level) {
     std::string result;
 
     switch (level)
@@ -22,12 +24,18 @@ std::string LogLevelToString(Debug::LogLevel level) {
         result = "unknown";
         break;
     }
-
-    result = "[" + result + "]";
     
     return result;
 }
 
-void Debug::Log(const std::string &message, Debug::LogLevel level) {
-    std::cout << LogLevelToString(level) << " - " << message << std::endl;
+void Debug::LogA(const std::string &message, const Debug::LogLevel level) {
+    printf("[%s] - %s\n", LogLevelToTString(level).c_str(), message.c_str());
+}
+
+void Debug::LogW(const std::wstring &message, const LogLevel level)
+{
+    std::string levelString = LogLevelToTString(level);
+    std::wstring levelWideString(levelString.begin(), levelString.end());
+
+    wprintf(L"[%s] - %s\n", levelWideString.c_str(), message.c_str());
 }

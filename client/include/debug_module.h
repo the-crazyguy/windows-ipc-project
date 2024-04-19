@@ -9,5 +9,8 @@ namespace Debug {
         Error,
     };
 
-    void Log(const std::string &message, LogLevel level = LogLevel::Info);
+    void LogA(const std::string &message, const LogLevel level = LogLevel::Info);
+    //Linker can't handle the basic_string<TCHAR> for some reason
+    //void TLog(const std::basic_string<TCHAR> &message, const LogLevel level = LogLevel::Info);
+    void LogW(const std::wstring &message, const LogLevel level = LogLevel::Info);
 }

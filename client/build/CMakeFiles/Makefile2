@@ -837,8 +837,8 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 # Target rules for target CMakeFiles/ipc_client.dir
 
 # All Build rule for target.
-CMakeFiles/ipc_client.dir/all: CMakeFiles/SmartHandle.dir/all
 CMakeFiles/ipc_client.dir/all: CMakeFiles/DebugModule.dir/all
+CMakeFiles/ipc_client.dir/all: CMakeFiles/SmartHandle.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ipc_client.dir\build.make CMakeFiles/ipc_client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ipc_client.dir\build.make CMakeFiles/ipc_client.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Programming\si7-personal-project\windows-ipc-project\client\build\CMakeFiles --progress-num=5,6 "Built target ipc_client"
