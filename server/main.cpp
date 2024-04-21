@@ -53,6 +53,7 @@ void ProcessClientThread(HANDLE pipeHandle) {
         return;
     }
 
+    //Note: All cool, but why not just use an array...? (see client code)
     //Memory allocation
     std::unique_ptr<TCHAR[]> clientRequest;
     std::unique_ptr<TCHAR[]> serverResponse;

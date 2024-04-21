@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: D:/Programming/si7-personal-project/windows-ipc-project/server
-BuildDirectory: D:/Programming/si7-personal-project/windows-ipc-project/server/build
+SourceDirectory: C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server
+BuildDirectory: C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: DESKTOP-5ADU8I2
+Site: DESKTOP-5GR40P3
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-mingw32-make
+BuildName: Win32-MSBuild
 
 # Subprojects
 LabelsForSubprojects: 
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "D:/Apps/CMake/bin/cmake.exe" "D:/Programming/si7-personal-project/windows-ipc-project/server"
-MakeCommand: D:/Apps/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "C:/CrazysStuff/Programming/c++/git_projects/windows-ipc-project/server"
+MakeCommand: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -63,8 +63,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe
-CompilerVersion: 19.29.30146.0
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x86/cl.exe
+CompilerVersion: 19.38.33135.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -81,7 +81,7 @@ MemoryCheckCommandOptions:
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: D:/Apps/MSYS2/Install/mingw64/bin/gcov.exe
+CoverageCommand: C:/CrazysStuff/Apps/msys64/ucrt64/bin/gcov.exe
 CoverageExtraFlags: -l
 
 # Testing options
@@ -95,7 +95,7 @@ TimeOut: 1500
 # so would cause the system load to exceed this value.
 TestLoad: 
 
-UseLaunchers: 
+UseLaunchers: 0
 CurlOptions: 
 # warning, if you add new options here that have to do with submit,
 # you have to update cmCTestSubmitCommand.cxx

@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <string>
 #include <tchar.h>
+#include <conio.h>
 
 #include "SmartHandle.h"
 #include "DataObject.h"
@@ -17,7 +18,7 @@ const DWORD PIPE_WAIT_TIMEOUT = 20 SECONDS;
 
 int _tmain( VOID ) {
     std::basic_string<TCHAR> fullPipeName = TEXT( "\\\\.\\pipe\\" ) + PIPE_NAME;
-    
+
     HANDLE pipeHandle = nullptr;
     //TODO: Add a way to (properly) stop the program via ctrl-c or the like
     while ( true ) {
@@ -72,6 +73,58 @@ int _tmain( VOID ) {
         &bytesWritten,
         nullptr //not overlapped 
     );
+
+    if ( !isSendSuccessful ) {
+        std::cerr << "WriteFile to pipe server failed. Last error: " <<
+                     GetLastError() <<
+                     std::endl;
+        return -1;
+    }
+
+    Debug::LogA("Message sent to server.");
+    
+    bool isDoneReading{false};
+    bool readSuccess{false};
+    std::basic_string<TCHAR> fullServerResponse;
+
+    do {
+        DWORD bytesRead{0};
+        TCHAR serverResponse[BUFSIZE];
+
+        readSuccess = ReadFile(
+            pipeHandle,
+            serverResponse,
+            BUFSIZE * sizeof(TCHAR),
+            &bytesRead,
+            nullptr //not overlapped
+        );
+        if ( readSuccess ) {
+            isDoneReading = true;
+            fullServerResponse += serverResponse;
+        } else if ( GetLastError() == ERROR_MORE_DATA ) {
+            fullServerResponse += serverResponse;
+        } else {
+            //Unhandled error, stop reading
+            isDoneReading = true;
+        }
+
+    } while ( !isDoneReading );
+    
+    if ( fullServerResponse.size() > 0 ) {
+        _tprintf(TEXT("Server response: %s"), fullServerResponse.c_str());
+    }
+
+    if ( !readSuccess ) {
+        std::cerr << "ReadFile from pipe server failed. Last error: " <<
+                     GetLastError() <<
+                     std::endl;
+        return -1;
+    }
+
+    std::wcout << "End of client logic, press any key to terminate connection to server and exit..." << std::endl;
+    _getch();
+
+    CloseHandle(pipeHandle);
 
     return 0;
 }
