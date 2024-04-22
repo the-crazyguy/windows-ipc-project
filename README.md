@@ -4,3 +4,4 @@
 
 # TODO
 - [ ] Fully commit to WCHAR instead of TCHAR
+- [ ] Replace unique_ptr request/response buffers with WCHAR arrays inside of server

@@ -32,9 +32,9 @@ int _tmain( VOID ) {
             nullptr //no template file
         );
 
-        if ( pipeHandle == INVALID_HANDLE_VALUE ) {
-            std::cerr << "CreateFile failed: " << GetLastError() << std::endl;
-            return -1;
+        //!!! BREAK !!!
+        if ( pipeHandle != INVALID_HANDLE_VALUE ) {
+            break;
         }
 
         if ( GetLastError() != ERROR_PIPE_BUSY ) {
@@ -63,13 +63,14 @@ int _tmain( VOID ) {
     }
 
     //Send simple message
-    std::basic_string<TCHAR> messageToSend = TEXT("Hello world!");
+    std::basic_string<TCHAR> messageToSend = TEXT("HelloWorld!");
+    DWORD bytesToWrite = ( lstrlen( messageToSend.c_str() ) + 1 ) * sizeof(TCHAR);  // use this instead of lstrlen? static_cast<DWORD>(messageToSend.size())
     DWORD bytesWritten = 0;
 
     bool isSendSuccessful = WriteFile(
         pipeHandle,
         messageToSend.c_str(),
-        static_cast<DWORD>(messageToSend.size()),
+        bytesToWrite,
         &bytesWritten,
         nullptr //not overlapped 
     );
@@ -111,7 +112,7 @@ int _tmain( VOID ) {
     } while ( !isDoneReading );
     
     if ( fullServerResponse.size() > 0 ) {
-        _tprintf(TEXT("Server response: %s"), fullServerResponse.c_str());
+        _tprintf(TEXT("Server response: %s\n"), fullServerResponse.c_str());
     }
 
     if ( !readSuccess ) {
